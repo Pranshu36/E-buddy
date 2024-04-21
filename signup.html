@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .container {
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 400px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .container h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #444;
+            color: #fff;
+        }
+        
+        .input-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Logo styles */
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 5px;
+            width: 50px;
+            height: auto;
+        }
+        
+        /* Typing animation styles */
+        .typing-animation {
+            text-align: left;
+            margin-bottom: 20px;
+            left: 48px;
+            color: #fff;
+            position: relative;
+        }
+        
+        .typing-animation svg {
+            width: 425px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo" class="logo">
+        
+        <!-- Typing animation -->
+        <div class="typing-animation">
+            <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&pause=1000&width=435&lines=Hello%2C+There!+%F0%9F%91%8B;This+is+E-buddy+....;Signup+to+get+started!" alt="Typing Animation">
+        </div>
+        
+        <h2>Signup</h2>
+        <form id="signupForm" action="#">
+            <div class="input-group">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Signup</button>
+        </form>
+    </div>
+
+    <!-- JavaScript to redirect to the login page after signup -->
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            
+            // Redirect to the login page
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

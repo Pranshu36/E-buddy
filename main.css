@@ -1,0 +1,147 @@
+.flex {
+    display: flex;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-slate-900 {
+    background-color: #0f172a;
+  }
+  
+  .bg-slate-800 {
+    background-color: #1e293b;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .bottom-5 {
+    bottom: 1.25rem;
+  }
+  
+  .left-6 {
+    left: 1.5rem;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .align-middle {
+    vertical-align: middle;
+  }
+  
+  .ml-5 {
+    margin-left: 1.25rem;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+  }
+  
+  /* .border-1 {
+    border-width: 1px;
+    border-style: solid;
+  } */
+  
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+  
+  .hover\:bg-slate-400:hover {
+    background-color: #718096;
+  }
+  
+  .hover\:bg-opacity-10:hover {
+    opacity: 0.1;
+  }
+  
+  .p-3 {
+    padding: 0.75rem;
+  }
+  
+  .h-12 {
+    height: 3rem;
+  }
+  
+  .w-12 {
+    width: 3rem;
+  }
+  
+  .ml-5 {
+    margin-left: 1.25rem;
+  }
+  
+  .hover:hover {
+    cursor: pointer;
+  }
+  
+  .bg-black {
+    background-color: #000;
+  }
+  
+  .shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem
+  }  
+
+
+  .messages{
+    position: relative;
+  }
+
+
+.logoimg{
+  margin-left: 67vh;
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+.welcometext{
+  margin-left: 55vh;
+  color: white;
+  font-size: x-large;
+  margin-top: 0;
+}
+
+.userin{
+  position: absolute;
+  vertical-align: bottom;
+  bottom: 15px;
+  margin-left: 20vh;
+  
+}
+
+#sendbutton:hover{
+  background-color: #0f172a81;
+}
+
+.faq{
+  margin: auto;
+  width: 20;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.quebut{
+  border-radius: 40px;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 7px;
+  height: 38px;
+  width: 38px;
+}
+

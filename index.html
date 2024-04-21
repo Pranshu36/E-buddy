@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatBot</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="flex min-h-screen">
+    <div class="w-3/12 bg-slate-900 relative">
+      <div style="margin-left: 70px;margin-top: 100px;" class="typing-animation">
+        <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=30&pause=1000&width=435&lines=Hello+there%2C+%F0%9F%91%8B;This+is+E-buddy+....;Enter+your+query!" alt="Typing Animation">
+    </div>
+      <div class="absolute bottom-5 left-6">
+        <div class="relative inline-block">
+          <button class="text-white border-1 rounded-md hover:bg-slate-400 hover:bg-opacity-7 p-3" onclick="toggleDropdown()">
+            <img class="h-12 w-12 inline-block align-middle" src="avatar.png" alt="" />
+            <p  class="inline-block align-middle ml-5 text-lg">User_admin</p>
+          </button>
+          <div class="absolute bg-black text-white shadow-md mt-2 py-1 w-40 rounded-md z-0 bottom-20 hidden" id="dropdown">
+            <p class="cursor-pointer px-4 py-2 inline-block align-middle hover:bg-gray-200">
+                <svg
+                    class="inline-block mr-3 ml-0.5"
+                    height="21px"
+                    version="1.1"
+                    viewBox="0 0 20 21"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title />
+                    <desc />
+                    <defs />
+                    <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                      <g fill="white" id="Core" opacity="0.9" transform="translate(-464.000000, -254.000000)">
+                        <g id="history" transform="translate(464.000000, 254.500000)">
+                          <path
+                            d="M10.5,0 C7,0 3.9,1.9 2.3,4.8 L0,2.5 L0,9 L6.5,9 L3.7,6.2 C5,3.7 7.5,2 10.5,2 C14.6,2 18,5.4 18,9.5 C18,13.6 14.6,17 10.5,17 C7.2,17 4.5,14.9 3.4,12 L1.3,12 C2.4,16 6.1,19 10.5,19 C15.8,19 20,14.7 20,9.5 C20,4.3 15.7,0 10.5,0 L10.5,0 Z M9,5 L9,10.1 L13.7,12.9 L14.5,11.6 L10.5,9.2 L10.5,5 L9,5 L9,5 Z"
+                            id="Shape"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+              History
+            </p>
+            <p class="cursor-pointer px-4 py-2 inline-block align-middle hover:bg-gray-200">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon-md inline-block align-middle mr-3"
+                  >
+                    <path
+                      d="M11.6439 3C10.9352 3 10.2794 3.37508 9.92002 3.98596L9.49644 4.70605C8.96184 5.61487 7.98938 6.17632 6.93501 6.18489L6.09967 6.19168C5.39096 6.19744 4.73823 6.57783 4.38386 7.19161L4.02776 7.80841C3.67339 8.42219 3.67032 9.17767 4.01969 9.7943L4.43151 10.5212C4.95127 11.4386 4.95127 12.5615 4.43151 13.4788L4.01969 14.2057C3.67032 14.8224 3.67339 15.5778 4.02776 16.1916L4.38386 16.8084C4.73823 17.4222 5.39096 17.8026 6.09966 17.8083L6.93502 17.8151C7.98939 17.8237 8.96185 18.3851 9.49645 19.294L9.92002 20.014C10.2794 20.6249 10.9352 21 11.6439 21H12.3561C13.0648 21 13.7206 20.6249 14.08 20.014L14.5035 19.294C15.0381 18.3851 16.0106 17.8237 17.065 17.8151L17.9004 17.8083C18.6091 17.8026 19.2618 17.4222 19.6162 16.8084L19.9723 16.1916C20.3267 15.5778 20.3298 14.8224 19.9804 14.2057L19.5686 13.4788C19.0488 12.5615 19.0488 11.4386 19.5686 10.5212L19.9804 9.7943C20.3298 9.17767 20.3267 8.42219 19.9723 7.80841L19.6162 7.19161C19.2618 6.57783 18.6091 6.19744 17.9004 6.19168L17.065 6.18489C16.0106 6.17632 15.0382 5.61487 14.5036 4.70605L14.08 3.98596C13.7206 3.37508 13.0648 3 12.3561 3H11.6439Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    ></path>
+                    <circle cx="12" cy="12" r="2.5" stroke="currentColor" stroke-width="2"></circle>
+                  </svg>
+              Settings
+            </p>
+            <p class="cursor-pointer px-4 py-2 inline-block align-middle hover:bg-gray-200">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon-md inline-block align-middle mr-3"
+                  >
+                    <path
+                      d="M11 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                    <path
+                      d="M20 12H11M20 12L16 16M20 12L16 8"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+              Logout
+            </p>
+          </div>
+          <button class="text-white bg-black p-2 rounded-md align-middle ml-5 hover:hover:bg-slate-400 hover:bg-opacity-10">
+            <svg class="h-8 w-8" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="light-mode">
+              <path d="M7 12c0 2.8 2.2 5 5 5s5-2.2 5-5-2.2-5-5-5-5 2.2-5 5zm5-3c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm1-4V3c0-.6-.4-1-1-1s-1 .4-1 1v2c0 .6.4 1 1 1s1-.4 1-1zm6.1-.1c-.4-.4-1-.4-1.4 0l-1.4 1.4c-.4.4-.4 1 0 1.4.2.2.5.3.7.3s.5-.1.7-.3l1.4-1.4c.4-.3.4-1 0-1.4zM21 11h-2c-.6 0-1 .4-1 1s.4 1 1 1h2c.6 0 1-.4 1-1s-.4-1-1-1zm-3.3 5.2c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l1.4 1.4c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4l-1.4-1.4zM11 19v2c0 .6.4 1 1 1s1-.4 1-1v-2c0-.6-.4-1-1-1s-1 .4-1 1zm-6.1.1c.2.2.5.3.7.3s.5-.1.7-.3l1.4-1.4c.4-.4.4-1 0-1.4s-1-.4-1.4 0l-1.4 1.4c-.4.3-.4 1 0 1.4zM2 12c0 .6.4 1 1 1h2c.6 0 1-.4 1-1s-.4-1-1-1H3c-.6 0-1 .4-1 1zm4.3-7.1c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l1.4 1.4c.2.3.5.4.8.4s.5-.1.7-.3c.4-.4.4-1 0-1.4L6.3 4.9z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="w-9/12 bg-slate-800">
+      <div class="chat-container">
+        <div class="messages" id="messages">
+            <div class="faq">
+                <button class="quebut" style="color: white;">?</button>
+            </div>
+          <img style="height: 180px; width: 180px;" class="logoimg" src="logo.png" alt="" />
+          <div class="welcometext">
+            Welcome! How can I assist you?
+          </div>
+        </div>
+        <div class="userin">
+          <input style="width: 700px; height: 55px;" type="text" id="userInput" placeholder="Type your message here..." class="p-3 rounded-md w-[100vh]" />
+          <button class="bg-slate-900 text-white py-4 px-10 rounded-md ml-2 hover:bg-slate-700" id="sendbutton">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById('dropdown');
+      dropdown.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
